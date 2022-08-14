@@ -1,0 +1,77 @@
+.sp-button {
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 2;
+    outline: 0;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    vertical-align: middle;
+    width: auto
+}
+
+.sp-button:active:not(.tooltip__button):not(.select__button) {
+    transform: translateY(2px)
+}
+
+.sp-button:disabled {
+    opacity: .5;
+    pointer-events: none
+}
+
+.button--lg {
+    font-size: 18px;
+    height: 60px;
+    line-height: 1.67;
+    padding: 15px 40px
+}
+
+.button--lg.button--fixed {
+    min-width: 260px
+}
+
+.button--pill {
+    border-radius: 40px
+}
+
+.button-purple {
+    background-color: #88619a;
+    border-color: #88619a;
+    color: #fff
+}
+.button-purple:focus, .button-purple:hover {
+    background-color: #6c4d7b;
+    border-color: #6c4d7b;
+    color: #fff
+}
+
+.button-amethystine {
+    background: #f5d;
+    border-color: #f5d;
+    color: #fff;
+}
+
+.button-amethystine:focus, .button-amethystine:hover {
+    background: #d3b;
+    border-color: #d3b;
+    color: #fff
+}
+
+@media (min-width: 1200px) {
+
+  .button--lg {
+      font-size: 20px;
+      height: 80px;
+      line-height: 2;
+      padding: 20px 50px
+  }
+
+  .button--lg.button--fixed {
+      min-width: 280px
+  }
+}

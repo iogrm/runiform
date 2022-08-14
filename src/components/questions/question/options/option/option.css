@@ -1,0 +1,158 @@
+
+.option {
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition: all .1s ease-in-out
+}
+
+.option.agree {
+    border: 2px solid #33a474
+}
+
+.option.agree.active, .option.agree:hover {
+    background-color: #33a474
+}
+
+.option.neutral {
+    border: 2px solid #9b9faa;
+    flex: 0 0 25px;
+    height: 25px;
+    max-width: 25px
+}
+
+.option.neutral.active, .option.neutral:hover {
+    background-color: #9b9faa
+}
+
+.option.neutral span {
+    font-size: .7em
+}
+
+.option.disagree {
+    border: 2px solid #88619a
+}
+
+.option.disagree.active, .option.disagree:hover {
+    background-color: #88619a
+}
+
+.option.max {
+    flex: 0 0 45px;
+    height: 45px;
+    max-width: 45px
+}
+
+.option.max span {
+    font-size: 1.1em;
+    margin-top: 3px
+}
+
+.option.med {
+    flex: 0 0 35px;
+    height: 35px;
+    max-width: 35px
+}
+
+.option.med span {
+    font-size: 1em;
+    margin-top: 2px
+}
+
+.option.min {
+    flex: 0 0 28px;
+    height: 28px;
+    max-width: 28px
+}
+
+.option.min span {
+    font-size: .8em;
+    margin-top: 1px
+}
+
+.option.active span {
+    color: #fff
+}
+
+.option span {
+    color: transparent
+}
+
+
+@media (min-width: 992px) {
+
+
+    .option.neutral {
+        flex: 0 0 30px;
+        height: 30px;
+        max-width: 30px
+    }
+
+    .option.max {
+        flex: 0 0 55px;
+        height: 55px;
+        max-width: 55px
+    }
+
+    .option.med {
+        flex: 0 0 45px;
+        height: 45px;
+        max-width: 45px
+    }
+
+    .option.min {
+        flex: 0 0 35px;
+        height: 35px;
+        max-width: 35px
+    }
+
+    .option.agree, .option.disagree, .option.neutral {
+        border-width: 3px
+    }
+}
+
+
+@media (min-width: 992px) and (min-height: 900px) {
+
+    .option.neutral {
+        flex: 0 0 35px;
+        height: 35px;
+        max-width: 35px
+    }
+
+    .option.neutral span {
+        font-size: .9em
+    }
+
+    .option.max {
+        flex: 0 0 70px;
+        height: 70px;
+        max-width: 70px
+    }
+
+    .option.max span {
+        font-size: 1.5em
+    }
+
+    .option.med {
+        flex: 0 0 55px;
+        height: 55px;
+        max-width: 55px
+    }
+
+    .option.med span {
+        font-size: 1.2em
+    }
+
+    .option.min {
+        flex: 0 0 45px;
+        height: 45px;
+        max-width: 45px
+    }
+
+    .option.min span {
+        font-size: 1em
+    }
+}

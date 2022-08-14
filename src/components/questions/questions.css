@@ -1,0 +1,40 @@
+html {
+    font-size: 16px;
+    touch-action: manipulation
+}
+
+body, html {
+    height: 100%
+}
+
+body {
+    color: #51596a;
+    font-size: 1.125em;
+    margin: 0;
+    transition: padding-top .2s ease-in-out
+}
+
+.test-questions.comp {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 15px;
+    width: 100%
+}
+
+@media (min-width: 400px) {
+    .test-questions.comp {
+        padding: 15px 30px
+    }
+}
+
+@media (min-width: 992px) {
+    .test-questions.comp {
+        padding: 15px
+    }
+
+}
+

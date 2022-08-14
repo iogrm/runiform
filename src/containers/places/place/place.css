@@ -1,0 +1,88 @@
+
+html {
+    box-sizing: border-box;
+}
+
+.place_main {
+    background: transparent;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.place_main .backdrop{
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0,0,0,0.70);
+}
+
+.place_detailContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.place_detailContainer p {
+    font-size: 18px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: .75px;
+    text-align: center;
+    color: #ddd
+}
+
+.place_detailContainer span {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #ddd;
+    margin-top: 20px;
+    line-height: normal;
+    width: 421px
+}
+
+.place_discription {
+    font-size: 17px; 
+    color: darkgoldenrod;
+}
+@media (max-width: 61.99em) {
+    .place_detailContainer span {
+        font-size: 25px !important
+    }
+}
+
+@media (max-width: 47.99em) {
+    .place_detailContainer span {
+        margin-top: 10px;
+        font-size: 7vmin
+    }
+}
+
+@media (max-width: 61.99em) {
+    .place_detailContainer span {
+        width: 296px
+    }
+}
+
+.place_detailContainer span.place_name {
+    font-size: 60px !important
+}
+
+@media (max-width: 61.99em) {
+    .place_detailContainer span.place_name {
+        font-size: 42px !important
+    }
+}

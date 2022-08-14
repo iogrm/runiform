@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+  }
+  
+  .welcome{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../../assets/images/welcome.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    display: block;
+    text-align: center;
+  }
+  
+  
+  .welcome h1{
+    font-weight: 300;
+    margin: 0;
+    font-size: 5.143rem;
+    line-height: 5.5rem;
+    letter-spacing: .4rem;
+    color: #fff;
+    margin-bottom:20px;
+  }
+  .welcome p{
+    line-height: 2rem;
+    color: #fff;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    font-size:1.125rem;
+  
+  }
+  
+  h3 {
+    line-height: 1.1;
+    font-weight: 300;
+    margin: 0;
+    font-size:1.714rem;
+    line-height: 2.5rem; 
+    color:#fff;
+  }
+  
+  p:last-child {
+      margin-bottom: 0px;
+  }
+  
+  .separator {
+      width: 10px;
+      height: 10px;
+      margin: 20px auto;
+      background: #f5d;
+      position: relative;
+      display: inline-block;
+      border-radius: 50%;
+  }
+  .separator:after {
+      position: absolute;
+      left:5%;
+      bottom:4px;
+      height: 1px;
+      width: 80px;
+      background: #eee;
+      content:"";
+      display: inline-block;
+      margin-left: 20px;
+  }
+  .separator:before {
+      position: absolute;
+      right: 5%;
+      bottom:4px;
+      height: 1px;
+      width: 80px;
+      background: #eee;
+      content:"";
+      display: inline-block;
+      margin-right: 20px;
+  }
+  

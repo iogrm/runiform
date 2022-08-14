@@ -1,0 +1,132 @@
+.question {
+    direction: rtl;
+    border-bottom: 1px solid #dddfe2;
+    max-width: 400px;
+    padding: 35px 0 20px;
+    transition: opacity .5s ease-in-out;
+    width: 100%
+}
+
+.question.inactive {
+    opacity: .3
+}
+
+.question .statement {
+    color: #576071;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center
+}
+
+.question .decision {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 15px
+}
+
+.question .decision:not(.mobile) .caption {
+    display: none
+}
+
+.question .decision.mobile {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px
+}
+
+.question .decision .caption {
+    font-size: .8em;
+    font-weight: 600;
+    text-transform: uppercase
+}
+
+.question .decision .caption.agree {
+    color: #33a474
+}
+
+.question .decision .caption.disagree {
+    color: #88619a
+}
+
+
+@media (min-width: 768px) {
+
+    .question {
+        max-width: none
+    }
+
+    .question .statement {
+        font-size: 1.2em
+    }
+
+    .question .decision {
+        margin: 30px 0 20px
+    }
+
+    .question .decision:not(.mobile) .caption {
+        display: block
+    }
+
+    .question .decision.mobile {
+        display: none
+    }
+
+    .question .decision .caption {
+        font-size: 1em;
+        text-transform: none
+    }
+
+}
+
+
+@media (min-width: 768px) and (min-height: 900px) {
+    .question .decision {
+        margin-top: 40px
+    }
+
+    .question .decision .caption {
+        font-size: 1.1em
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    .question {
+        padding: 35px 0 20px
+    }
+
+    .question .statement {
+        font-size: 1.3em
+    }
+
+    .question .decision .caption {
+        font-size: 1.1em
+    }
+
+}
+
+
+@media (min-width: 992px) and (min-height: 900px) {
+
+    .question {
+        padding: 60px 0 45px
+    }
+
+     .question .statement {
+        font-size: 1.4em
+    }
+
+    .question .decision {
+        margin: 50px 0 30px
+    }
+
+    .question .decision .caption {
+        font-size: 1.3em
+    }
+}
+
+
+

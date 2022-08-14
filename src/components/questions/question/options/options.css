@@ -1,0 +1,28 @@
+.options {
+    align-items: center;
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: space-between;
+    margin: 0 15px
+}
+
+@media (min-width: 768px) {
+    .options {
+        flex: 0 0 400px;
+        margin: 0 30px
+    }
+}
+
+@media (min-width: 992px) {
+    .options {
+        flex: 0 0 500px
+    }
+
+}
+
+@media (min-width: 992px) and (min-height: 900px) {
+    .options {
+        flex: 0 0 600px;
+        margin: 0 60px
+    }
+}
